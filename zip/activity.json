@@ -1,0 +1,36 @@
+{
+    "name": "zip",
+    "type": "flogo:activity",
+    "ref": "github.com/retgits/flogo-components/activity/gzip",
+    "version": "0.1.0",
+    "title": "Zip",
+    "description": "Read zip format compressed files",
+    "author": "Herico",
+    "homepage": "",
+    "inputs": [
+        {
+            "name": "action",
+            "type": "string",
+            "allowed": [
+                "unzip"
+            ],
+            "required": true
+        },
+        {
+            "name": "sourceFile",
+            "type": "string",
+            "required": true
+        },
+        {
+            "name": "targetDirectory",
+            "type": "string",
+            "required": true
+        }
+    ],
+    "outputs": [
+        {
+            "name": "result",
+            "type": "string"
+        }
+    ]
+}

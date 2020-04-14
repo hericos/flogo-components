@@ -1,12 +1,12 @@
 {
     "name": "zip",
     "type": "flogo:activity",
-    "ref": "github.com/retgits/flogo-components/activity/gzip",
+    "ref": "github.com/hericos/flogo-components/zip",
     "version": "0.1.0",
     "title": "Zip",
     "description": "Read zip format compressed files",
     "author": "Herico",
-    "homepage": "",
+    "homepage": "github.com/hericos/",
     "inputs": [
         {
             "name": "action",

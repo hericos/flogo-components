@@ -44,7 +44,6 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error) {
 
 	// Get the action
 	action := context.GetInput(ivAction).(string)
-	removeFile := context.GetInput(ivRemoveFile).(bool)
 	sourceFile := context.GetInput(ivSourceFile).(string)
 	targetDirectory := context.GetInput(ivTargetDirectory).(string)
 
@@ -71,7 +70,7 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error) {
 }
 
 // Unzip will decompress a zip archive, moving all files and folders
-func Unzip(src string, dest string) ([]string, error) {
+func Unzip(src string, dest string) (error) {
 
     var filenames []string
 

@@ -5,7 +5,6 @@ import (
 	"archive/zip"
 	"fmt"
 	"io"
-	// "log"
 	"os"
 	"path/filepath"
 	"strings"
